@@ -1,0 +1,160 @@
+.modal-wrapper {
+  background: white;
+  border: 1px solid #d0cccc;
+  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.17);
+  margin: 100px auto 0;
+  transition: all 0.8s;
+  width: 45%;
+  z-index: 5000;
+}
+
+.modal-body {
+  padding: 10px 15px;
+  margin: 5px;
+  text-align: left;
+  font-size: 13px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.modal-header {
+  background: #263238;
+  height: 40px;
+  line-height: 40px;
+  padding: 5px 20px;
+  text-align: right;
+}
+
+.modal-header h3 {
+  color: white;
+  float: left;
+  margin: 0;
+  padding: 0;
+}
+
+.modal-subheader {
+  padding: 0px;
+  text-align: left;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.modal-optionheader {
+  padding: 0px;
+  padding-top: 10px;
+  text-align: left;
+  font-weight: bold;
+}
+
+.modal-optiondetail {
+  padding: 0px;
+  padding-top: 3px;
+  padding-bottom: 5px;
+  text-align: left;
+  font-size: 12px;
+  color: grey;
+}
+
+.modal-optionvalues {
+  position: relative;
+  padding: 3px;
+  text-align: left;
+  font-size: 13px;
+  font-weight: normal;
+  background: rgb(233, 230, 230);
+  overflow-x: hidden;
+  white-space: nowrap;
+}
+
+.modal-optionvalues:hover > .copyclip {
+  display: flex;
+}
+
+.copyclip {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  color: white;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.modal-valuenames {
+  color: darkblue;
+}
+
+.modal-valuecmd {
+  color: green;
+}
+
+.modal-singlevalue {
+  text-align: left;
+  font-size: 12px;
+  background: rgba(83, 75, 75, 0.17);
+}
+
+.modal-groupnamevalue {
+  color: yellow;
+}
+
+.modal-footer {
+  background: #263238;
+  height: 35px;
+  padding: 15px;
+}
+
+.close-modal-btn {
+  color: black;
+  cursor: pointer;
+  float: right;
+  font-size: 24px;
+  margin: 0;
+}
+
+.close-modal-btn:hover {
+  color: black;
+}
+
+.back-drop {
+  background-color: rgba(20, 20, 20, 0.856);
+  height: 100%;
+  position: fixed;
+  transition: all 1.3s;
+  width: 100%;
+}
+
+.grid {
+  display: flex; /* establish flex container */
+  flex-wrap: wrap; /* enable flex items to wrap */
+  justify-content: space-around;
+}
+.Leftcell {
+  flex: 0 0 20%; /* don't grow, don't shrink, width */
+  height: 18px;
+  margin-bottom: 2px;
+  background-color: white;
+}
+
+.Centercell {
+  flex: 0 0 65%; /* don't grow, don't shrink, width */
+  height: 18px;
+  padding-left: 5px;
+  margin-bottom: 2px;
+  background: rgba(83, 75, 75, 0.17);
+}
+.Rightcell {
+  flex: 0 0 7%; /* don't grow, don't shrink, width */
+  height: 18px;
+  padding-left: 5px;
+  margin-bottom: 2px;
+  background-color: white;
+}
+
+.open-modal-btn {
+  margin: 15px;
+  padding: 10px;
+  font-weight: bold;
+}

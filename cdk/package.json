@@ -1,0 +1,48 @@
+{
+  "name": "amazon-cognito-cdk-example-for-getting-aws-credentials",
+  "version": "0.5.0",
+  "author": "Kyle Barber",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kbarber09/amazon-cognito-cdk-example-for-getting-aws-credentials.git"
+  },
+  "description": "The infrastructure for the example",
+  "bin": {
+    "cdkcog": "bin/cdkcog.js"
+  },
+  "scripts": {
+    "ts-node": "ts-node",
+    "tsc": "tsc",
+    "build": "tsc -b",
+    "watch": "tsc -w",
+    "clean": "tsc -b --clean",
+    "cdk": "cdk",
+    "cdk-synth": "cdk synth",
+    "cdk-diff": "cdk diff || true",
+    "cdk-deploy": "cdk deploy",
+    "cdk-bootstrap": "cdk bootstrap",
+    "generate-config": "ts-node ./lib/generateConfig.ts"
+  },
+  "devDependencies": {
+    "@aws-cdk/assert": "1.33.0",
+    "@types/node": "10.17.5",
+    "aws-cdk": "^1.33.1",
+    "ts-node": "^8.8.2",
+    "typescript": "~3.7.2",
+    "dotenv": "^8.2.0"
+  },
+  "dependencies": {
+    "@aws-cdk/aws-apigateway": "^1.33.1",
+    "@aws-cdk/aws-cloudfront": "^1.33.1",
+    "@aws-cdk/aws-cognito": "^1.33.1",
+    "@aws-cdk/aws-iam": "^1.33.1",
+    "@aws-cdk/aws-lambda": "^1.33.1",
+    "@aws-cdk/aws-s3": "^1.33.1",
+    "@aws-cdk/aws-sns": "^1.33.1",
+    "@aws-cdk/aws-sns-subscriptions": "^1.33.1",
+    "@aws-cdk/core": "^1.33.1",
+    "aws-sdk": "^2.658.0",
+    "source-map-support": "^0.5.17"
+  }
+}

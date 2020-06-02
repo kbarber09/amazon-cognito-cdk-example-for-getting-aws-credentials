@@ -1,0 +1,22 @@
+**/.DS_Store
+**/.idea
+**/*.iml
+**/*.js
+**/*.d.ts
+**/node_modules
+**/dist
+**/build
+!ui-react/src/*.js
+!ui-react/src/code/*.js
+!ui-react/src/components/**/*.js
+!ui-react/src/config/appConfig.js
+!ui-react/src/config/config.js
+env.sh
+# CDK asset staging directory
+.cdk.staging
+cdk.out
+
+
+# Parcel build directories
+.cache
+.build
